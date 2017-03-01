@@ -1,0 +1,53 @@
+.fade-animation-enter {
+  opacity: 0.01;
+}
+
+.fade-animation-enter.fade-animation-enter-active {
+  opacity: 1;
+  transition: opacity 500ms ease-in;
+}
+
+.fade-animation-leave {
+  opacity: 0;
+  display: none
+}
+
+.router-navigation-leave.router-navigation-leave-active {
+  opacity: 0;
+  display: none;
+  transition: opacity 300ms ease-in;
+}
+
+.flipInY-animation-enter {
+  animation-name: flipInY;
+  animation-duration: .5s;
+}
+
+@keyframes flipInY {
+  from {
+    -webkit-transform: perspective(400px) rotate3d(0, 1, 0, 10deg);
+    transform: perspective(400px) rotate3d(0, 1, 0, 10deg);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+    opacity: 0;
+  }
+  40% {
+    -webkit-transform: perspective(400px) rotate3d(0, 1, 0, -5deg);
+    transform: perspective(400px) rotate3d(0, 1, 0, -5deg);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+  60% {
+    -webkit-transform: perspective(400px) rotate3d(0, 1, 0, 3deg);
+    transform: perspective(400px) rotate3d(0, 1, 0, 3deg);
+    opacity: 1;
+  }
+  80% {
+    -webkit-transform: perspective(400px) rotate3d(0, 1, 0, -1deg);
+    transform: perspective(400px) rotate3d(0, 1, 0, -1deg);
+  }
+  to {
+    -webkit-transform: perspective(400px);
+    transform: perspective(400px);
+  }
+}

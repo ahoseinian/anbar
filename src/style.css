@@ -1,0 +1,82 @@
+html {
+  direction: rtl;
+}
+
+@font-face {
+  font-family: 'BYekan';
+  src: url('./fonts/BYekan.woff') format('woff');
+}
+
+body {
+  font-family: BYekan;
+  background-color: rgba(223, 229, 255, 0.36);
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+select, input, button {
+  font-family: unset;
+}
+
+button {
+  cursor: pointer;
+}
+
+.list-group-item {
+  padding: .2rem;
+}
+
+.card-block {
+  padding: .2rem;
+}
+
+.btn-sm {
+  padding: .1rem .2rem;
+}
+
+.request-card {
+  height: 35rem;
+}
+
+.request-card .button-place {
+  position: absolute;
+  top: 0;
+  right: -1.7rem;
+}
+
+.request-card .button-place button {
+  width: 1.7rem;
+  cursor: pointer;
+  padding: .5rem .3rem .2rem .3rem;
+  border-radius: 0 .2rem .2rem 0;
+  margin-bottom: .3rem;
+}
+
+.s-alert-box {
+  font-family: unset;
+}
+
+.badge {
+  white-space: unset;
+}
+
+.card, .navbar{
+  border-radius: 0;
+  box-shadow: 0 0 5px 1px #d2ebff;
+  border: none;
+}
+
+
+.page-item {
+  cursor: pointer;
+}
+
+.white {
+  color: white
+}
+
+.page-item.active .page-link {
+  z-index: unset
+}
