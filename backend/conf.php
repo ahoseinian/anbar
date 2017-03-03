@@ -1,5 +1,5 @@
 <?php
-$db = new PDO('mysql:host=localhost;dbname=salardugme;charset=utf8', 'salar', '123456');
+$db = new PDO('mysql:host=localhost;dbname=salardugme;charset=utf8', 'root', 'zxcvb');
 $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 $db->setAttribute(PDO::ATTR_EMULATE_PREPARES, false);
 header('Content-Type: application/json; charset=utf-8');
